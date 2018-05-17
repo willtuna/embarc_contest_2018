@@ -118,7 +118,7 @@ EMBARC_ROOT = setting your root path of your embARC-osp without " "
 
 ##### Machine Learning Data Analysis Please Reference to the Technical Document with following links.    
 
-[Link](https://)
+[Link](http://htmlpreview.github.com/?https://github.com/willtuna/embarc_contest_2018/blob/master/Data_Preprocessing_Degree.html)
 
 ### run-this-application
 run the "make run" command on cmd in directory where your makefile is
