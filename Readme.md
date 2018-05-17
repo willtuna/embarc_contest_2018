@@ -12,7 +12,7 @@ In this contest, we aim to develop a machine learning method to calibrate the th
 	* [Before Running This Application](#before-running-this-application)
 	* [Data Extraction](#raw-data)
 	* [Run This Application](#run-this-application)
-    * [Demo Video](#DemoVideo)
+        * [DemoVideo](#DemoVideo)
 # Introduction
  In most acedemic research, most of those fabricated chips are verfied through testing machine to check the input and output pattern's functionality. However for sensor design, we need a platform to check the functionality.
  
@@ -130,4 +130,5 @@ run the "make run" command on cmd in directory where your makefile is
 Result:
 ![](https://i.imgur.com/xL69Pdh.png)
 
-# [DemoVideo](http://v.youku.com/v_show/id_XMzYxMTM2MDgyNA==.html?spm=a2h3j.8428770.3416059.1)
+# DemoVideo
+[Link](http://v.youku.com/v_show/id_XMzYxMTM2MDgyNA==.html?spm=a2h3j.8428770.3416059.1)
