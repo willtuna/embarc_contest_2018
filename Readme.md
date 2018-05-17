@@ -43,21 +43,23 @@ ARC EMSK Platform with USB cable
 ![](https://i.imgur.com/neNKqxc.png) 
 
 Customized Temperature Sensor Chip
-| Picture|
+![](https://i.imgur.com/vPgDj5b.jpg =50x)
+
+|                Picture                     |
 | ------------------------------------------ |
-|![](https://i.imgur.com/vPgDj5b.jpg =50x)   |
-| Technology:0.18u 							 |
-| Temperature Range: 0 ~ 100				 |
-| Area 0.7 $mm^2$   						 |
+| Technology:0.18u 			     |
+| Temperature Range: 0 ~ 100		     |
+| Area 0.7 mm^2                              |
 
 Other Part for Sensor Read Out Circuit
-| Part Name                  | Number | Purpose 								      |
-| -------------------------- | ------ | --------------------------------------------- | 
-| 7404 Logic IC              |   6    | Buffer from EMSK(3.3V) to CHIP IO(1.8V)       |
-| NTC Themistor $2 M\Omega$  |   2    | External Thermal Sensor                       |
-| Capacitor  0.5uF           |   5    | CHIP Voltage and IO PAD Voltage Stabilization |
-| Dupont Line                |   16   | ARC Connection                                |
-| 34Pin 2 Connector IDE Cable|   2    | For Long Connection to Breadboard in Chamber  |
+
+| Part Name                   | Number | Purpose                                       |
+| --------------------------- | ------ | --------------------------------------------- | 
+| 7404 Logic IC               |   6    | Buffer from EMSK(3.3V) to CHIP IO(1.8V)       |
+| NTC Themistor $2 M\Omega$   |   2    | External Thermal Sensor                       |
+| Capacitor  0.5uF            |   5    | CHIP Voltage and IO PAD Voltage Stabilization |
+| Dupont Line                 |   16   | ARC Connection                                |
+| 34Pin 2 Connector IDE Cable |   2    | For Long Connection to Breadboard in Chamber  |
 
 |               PC platform                 |
 | ----------------------------------------- |
