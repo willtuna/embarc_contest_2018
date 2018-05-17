@@ -43,7 +43,8 @@ ARC EMSK Platform with USB cable
 ![](https://i.imgur.com/neNKqxc.png) 
 
 Customized Temperature Sensor Chip
-![](https://i.imgur.com/vPgDj5b.jpg |width=20)
+ 
+<img src="https://i.imgur.com/vPgDj5b.jpg" width=50 >
 
 |                Picture                     |
 | ------------------------------------------ |
