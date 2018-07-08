@@ -72,6 +72,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+//#define DBGMODE 1
+
 static volatile int t0 = 0;
 static volatile int blink ;
 static DEV_GPIO_PTR led_port;
@@ -140,7 +142,11 @@ signed int mse_param[6]={
         563, // out**2 e-1
        -55577, // out e-3
         4017};// const e-2
-int in_offset = 756,out_offset = -1549;
+//int in_offset = 0,out_offset = 0;
+//int in_offset = -830,out_offset = -2964;
+
+int in_offset = (12976-13046), out_offset = (7422-9694);
+
 int train_min_in=1131086;//e-2
 int train_min_out=36389;//e-1
 int train_max_in=1363624;//e-2
@@ -224,17 +230,14 @@ static void timer0_isr(void *ptr)
 				
 	if(count==237){				
 		//Original
-		//EMBARC_PRINTF("------------------------------\n");																			
-		//EMBARC_PRINTF("s_thermal_in_sensing:  %5d\n",s_thermal_in_sensing);	
-		//EMBARC_PRINTF("s_thermal_out_sensing: %5d\n",s_thermal_out_sensing);																			
-
-	    //EMBARC_PRINTF("s_thermal_in_sensing :%d\n",s_thermal_in_sensing  );
-	    //EMBARC_PRINTF("s_thermal_in_ruler   :%d\n",s_thermal_in_ruler    );
-	    //EMBARC_PRINTF("s_thermal_in_ppg     :%d\n",s_thermal_in_ppg      );
-	    //EMBARC_PRINTF("s_thermal_out_sensing:%d\n",s_thermal_out_sensing );
-	    //EMBARC_PRINTF("s_thermal_out_ruler  :%d\n",s_thermal_out_ruler   );
-	    //EMBARC_PRINTF("s_thermal_out_ppg    :%d\n",s_thermal_out_ppg     );
-
+/*
+	    EMBARC_PRINTF("s_thermal_in_sensing :%d\n",s_thermal_in_sensing  );
+	    EMBARC_PRINTF("s_thermal_out_sensing:%d\n",s_thermal_out_sensing );
+	    EMBARC_PRINTF("s_thermal_in_ruler   :%d\n",s_thermal_in_ruler    );
+	    EMBARC_PRINTF("s_thermal_in_ppg     :%d\n",s_thermal_in_ppg      );
+	    EMBARC_PRINTF("s_thermal_out_ruler  :%d\n",s_thermal_out_ruler   );
+	    EMBARC_PRINTF("s_thermal_out_ppg    :%d\n",s_thermal_out_ppg     );
+*/
 		ex_ave[ave_cnt] = s_thermal_out_sensing;
 		in_ave[ave_cnt] = s_thermal_in_sensing;
 		//EMBARC_PRINTF("ave_cnt: %5d\n",ave_cnt);																			
@@ -347,11 +350,17 @@ EMBARC_PRINTF("                                                                 
 EMBARC_PRINTF("-------------------------------------------------------------------\n");																			
 EMBARC_PRINTF("                 Estimated Temp:  %d.%d\n",dgr_int,dgr_fract);
 EMBARC_PRINTF("-------------------------------------------------------------------\n");																			
+#ifdef DBGMODE
+    EMBARC_PRINTF("s_thermal_in_sensing:%d\ns_thermal_out_sensing:%d\n",s_thermal_in_sensing,s_thermal_out_sensing);
+    EMBARC_PRINTF("in_sqr: %d\nin:%d\nout_cube:%d\nout_sqr:%d\nout:%d\nscalar:%d\n",in_sqr,in,out_cube,out_sqr,out,mse_param[5]);
+#endif
+
 EMBARC_PRINTF("\n\n\n\n");
 EMBARC_PRINTF("\n\n\n\n");
 EMBARC_PRINTF("\n\n\n\n");
 	}
-		count++;
+	count++;
+
 	if(count==258){
 		count=0;
 		print_count = (print_count + 1)%50;
@@ -402,7 +411,8 @@ int main(void)
 	int_handler_install(INTNO_TIMER0, timer0_isr);
 	int_enable(INTNO_TIMER0);
 	//timer_start(TIMER_0, TIMER_CTRL_IE, BOARD_CPU_CLOCK/1000);
-	timer_start(TIMER_0, TIMER_CTRL_IE, BOARD_CPU_CLOCK/5000);
+    timer_start(TIMER_0, TIMER_CTRL_IE, BOARD_CPU_CLOCK/5000);
+   // timer_start(TIMER_0, TIMER_CTRL_IE, BOARD_CPU_CLOCK/100);
 
 
 	cpu_unlock(); /* unlock system */

@@ -547,7 +547,7 @@ OUTPUT(obj_emsk_22/gnu_arcem11d/contest_gnu_arcem11d.elf elf32-littlearc)
  .debug_aranges
                 0x00000240       0x20 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_gpio.o
 
-.debug_line     0x00000000     0x2872
+.debug_line     0x00000000     0x2870
  .debug_line    0x00000000      0x338 obj_emsk_22/gnu_arcem11d/application/./main.o
  .debug_line    0x00000338      0x26c obj_emsk_22/gnu_arcem11d/board/board.o
  .debug_line    0x000005a4       0x79 obj_emsk_22/gnu_arcem11d/arc/startup/arc_cxx_support.o
@@ -556,57 +556,57 @@ OUTPUT(obj_emsk_22/gnu_arcem11d/contest_gnu_arcem11d.elf elf32-littlearc)
  .debug_line    0x0000096a      0x376 obj_emsk_22/gnu_arcem11d/device/ip/designware/gpio/dw_gpio.o
  .debug_line    0x00000ce0      0x186 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_init.o
  .debug_line    0x00000e66      0x18c obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_timer.o
- .debug_line    0x00000ff2      0x1e3 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/mux/mux.o
- .debug_line    0x000011d5      0x270 obj_emsk_22/gnu_arcem11d/middleware/common/console_io.o
- .debug_line    0x00001445      0x243 obj_emsk_22/gnu_arcem11d/middleware/common/xprintf/xprintf.o
- .debug_line    0x00001688      0x13a obj_emsk_22/gnu_arcem11d/arc/arc_timer.o
- .debug_line    0x000017c2      0x2ce obj_emsk_22/gnu_arcem11d/arc/arc_cache.o
- .debug_line    0x00001a90      0x2fc obj_emsk_22/gnu_arcem11d/arc/arc_exception.o
- .debug_line    0x00001d8c       0xab obj_emsk_22/gnu_arcem11d/arc/arc_exc_asm.o
- .debug_line    0x00001e37      0x170 obj_emsk_22/gnu_arcem11d/library/clib/embarc_misc.o
- .debug_line    0x00001fa7      0x270 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/uart/dw_uart_obj.o
- .debug_line    0x00002217      0x4ca obj_emsk_22/gnu_arcem11d/device/ip/designware/uart/dw_uart.o
- .debug_line    0x000026e1      0x191 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_gpio.o
+ .debug_line    0x00000ff2      0x1e1 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/mux/mux.o
+ .debug_line    0x000011d3      0x270 obj_emsk_22/gnu_arcem11d/middleware/common/console_io.o
+ .debug_line    0x00001443      0x243 obj_emsk_22/gnu_arcem11d/middleware/common/xprintf/xprintf.o
+ .debug_line    0x00001686      0x13a obj_emsk_22/gnu_arcem11d/arc/arc_timer.o
+ .debug_line    0x000017c0      0x2ce obj_emsk_22/gnu_arcem11d/arc/arc_cache.o
+ .debug_line    0x00001a8e      0x2fc obj_emsk_22/gnu_arcem11d/arc/arc_exception.o
+ .debug_line    0x00001d8a       0xab obj_emsk_22/gnu_arcem11d/arc/arc_exc_asm.o
+ .debug_line    0x00001e35      0x170 obj_emsk_22/gnu_arcem11d/library/clib/embarc_misc.o
+ .debug_line    0x00001fa5      0x270 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/uart/dw_uart_obj.o
+ .debug_line    0x00002215      0x4ca obj_emsk_22/gnu_arcem11d/device/ip/designware/uart/dw_uart.o
+ .debug_line    0x000026df      0x191 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_gpio.o
 
-.debug_str      0x00000000     0x2704
- .debug_str     0x00000000      0xac5 obj_emsk_22/gnu_arcem11d/application/./main.o
-                                0xc16 (size before relaxing)
- .debug_str     0x00000ac5       0x7b obj_emsk_22/gnu_arcem11d/board/board.o
-                                0x8c2 (size before relaxing)
- .debug_str     0x00000b40      0x132 obj_emsk_22/gnu_arcem11d/arc/startup/arc_cxx_support.o
-                                0x26f (size before relaxing)
- .debug_str     0x00000c72       0x1d obj_emsk_22/gnu_arcem11d/arc/startup/arc_startup.o
-                                 0x60 (size before relaxing)
- .debug_str     0x00000c8f      0x40e obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/gpio/dw_gpio_obj.o
-                                0x94c (size before relaxing)
- .debug_str     0x0000109d      0x34a obj_emsk_22/gnu_arcem11d/device/ip/designware/gpio/dw_gpio.o
-                                0x937 (size before relaxing)
- .debug_str     0x000013e7       0x55 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_init.o
-                                0x468 (size before relaxing)
- .debug_str     0x0000143c      0x124 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_timer.o
-                                0x580 (size before relaxing)
- .debug_str     0x00001560      0x1cf obj_emsk_22/gnu_arcem11d/board/emsk/drivers/mux/mux.o
-                                0x5f6 (size before relaxing)
- .debug_str     0x0000172f      0x15e obj_emsk_22/gnu_arcem11d/middleware/common/console_io.o
-                                0xa14 (size before relaxing)
- .debug_str     0x0000188d       0xad obj_emsk_22/gnu_arcem11d/middleware/common/xprintf/xprintf.o
-                                0x253 (size before relaxing)
- .debug_str     0x0000193a       0x21 obj_emsk_22/gnu_arcem11d/arc/arc_timer.o
-                                0x258 (size before relaxing)
- .debug_str     0x0000195b      0x222 obj_emsk_22/gnu_arcem11d/arc/arc_cache.o
-                                0x485 (size before relaxing)
- .debug_str     0x00001b7d      0x2ae obj_emsk_22/gnu_arcem11d/arc/arc_exception.o
-                                0x61e (size before relaxing)
- .debug_str     0x00001e2b        0xe obj_emsk_22/gnu_arcem11d/arc/arc_exc_asm.o
-                                 0x60 (size before relaxing)
- .debug_str     0x00001e39       0x27 obj_emsk_22/gnu_arcem11d/library/clib/embarc_misc.o
-                                0x646 (size before relaxing)
- .debug_str     0x00001e60      0x2f8 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/uart/dw_uart_obj.o
-                                0x865 (size before relaxing)
- .debug_str     0x00002158      0x34b obj_emsk_22/gnu_arcem11d/device/ip/designware/uart/dw_uart.o
-                                0xcf9 (size before relaxing)
- .debug_str     0x000024a3      0x261 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_gpio.o
-                                0x74a (size before relaxing)
+.debug_str      0x00000000     0x2705
+ .debug_str     0x00000000      0xac6 obj_emsk_22/gnu_arcem11d/application/./main.o
+                                0xc17 (size before relaxing)
+ .debug_str     0x00000ac6       0x7b obj_emsk_22/gnu_arcem11d/board/board.o
+                                0x8c3 (size before relaxing)
+ .debug_str     0x00000b41      0x132 obj_emsk_22/gnu_arcem11d/arc/startup/arc_cxx_support.o
+                                0x270 (size before relaxing)
+ .debug_str     0x00000c73       0x1d obj_emsk_22/gnu_arcem11d/arc/startup/arc_startup.o
+                                 0x61 (size before relaxing)
+ .debug_str     0x00000c90      0x40e obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/gpio/dw_gpio_obj.o
+                                0x94d (size before relaxing)
+ .debug_str     0x0000109e      0x34a obj_emsk_22/gnu_arcem11d/device/ip/designware/gpio/dw_gpio.o
+                                0x938 (size before relaxing)
+ .debug_str     0x000013e8       0x55 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_init.o
+                                0x469 (size before relaxing)
+ .debug_str     0x0000143d      0x124 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_timer.o
+                                0x581 (size before relaxing)
+ .debug_str     0x00001561      0x1cf obj_emsk_22/gnu_arcem11d/board/emsk/drivers/mux/mux.o
+                                0x5f7 (size before relaxing)
+ .debug_str     0x00001730      0x15e obj_emsk_22/gnu_arcem11d/middleware/common/console_io.o
+                                0xa15 (size before relaxing)
+ .debug_str     0x0000188e       0xad obj_emsk_22/gnu_arcem11d/middleware/common/xprintf/xprintf.o
+                                0x254 (size before relaxing)
+ .debug_str     0x0000193b       0x21 obj_emsk_22/gnu_arcem11d/arc/arc_timer.o
+                                0x259 (size before relaxing)
+ .debug_str     0x0000195c      0x222 obj_emsk_22/gnu_arcem11d/arc/arc_cache.o
+                                0x486 (size before relaxing)
+ .debug_str     0x00001b7e      0x2ae obj_emsk_22/gnu_arcem11d/arc/arc_exception.o
+                                0x61f (size before relaxing)
+ .debug_str     0x00001e2c        0xe obj_emsk_22/gnu_arcem11d/arc/arc_exc_asm.o
+                                 0x61 (size before relaxing)
+ .debug_str     0x00001e3a       0x27 obj_emsk_22/gnu_arcem11d/library/clib/embarc_misc.o
+                                0x647 (size before relaxing)
+ .debug_str     0x00001e61      0x2f8 obj_emsk_22/gnu_arcem11d/board/emsk/drivers/ip/designware/uart/dw_uart_obj.o
+                                0x866 (size before relaxing)
+ .debug_str     0x00002159      0x34b obj_emsk_22/gnu_arcem11d/device/ip/designware/uart/dw_uart.o
+                                0xcfa (size before relaxing)
+ .debug_str     0x000024a4      0x261 obj_emsk_22/gnu_arcem11d/board/emsk/common/emsk_gpio.o
+                                0x74b (size before relaxing)
 
 .comment        0x00000000       0x42
  .comment       0x00000000       0x42 obj_emsk_22/gnu_arcem11d/application/./main.o
